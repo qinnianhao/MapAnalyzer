@@ -51,7 +51,6 @@ def write_excel(path, list1,list2):
 if __name__ == '__main__':
     print("请选择Tasking编译器生成的*.map文件：")
     map_path = askopenfilename(title="选择文件", filetypes=[("map文件", "*.map")])
-    print(map_path)
     f = os.path.basename(map_path).split(".")[0]+'_'+ time.strftime('%Y%m%d%H%M%S')
     file_pre = f+'_pre.xlsx'
     file_pos = f+'_pos.xlsx'
